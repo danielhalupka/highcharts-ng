@@ -389,6 +389,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' && module.ex
         scope.$on('window.resizeCharts', function() {
           var height = chart.renderTo.clientHeight;
           var width = chart.renderTo.clientWidth;
+          chart.redraw();
           chart.setSize(width, height);
         });
 
